@@ -92,6 +92,27 @@ nav ul li + li {
 }
 
 /* -------------------------------- */
+/* Hero banner                      */
+/* -------------------------------- */
+
+.hero-banner {
+    background-image: url('../img/banner\ \(5\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 0.3);
+    margin-bottom: 50px;
+}
+
+.hero-text {
+    height: 400px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* -------------------------------- */
 /* contact form                     */
 /* -------------------------------- */
 
@@ -132,6 +153,16 @@ nav ul li + li {
     padding: 10px;
     border-radius: var(--app-border-radius);
     border: 1px solid #e3e6e7;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.send {
+    background-color: var(--app-light-green);
+    color: #fff;
+}
+
+.send:hover {
+    background-color: var(--app-green-hover);
 }
 
 .names, .email, .message {
