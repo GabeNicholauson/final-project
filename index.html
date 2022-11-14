@@ -1,101 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial scale=1.0">
-        <meta name="author" content="Team">
-        <meta name="description" content="Norman">
-        <meta name="keywords" content="pictures, photos, photography">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" >
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Norman</title>
-        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
-        <link rel="stylesheet" href="assets/style/index.css" media="screen">
-        <script src="assets/script/index.js" defer></script>
-    </head>
-    <body>
-        <main>
-            <header>
-                <div class="container flexbox">
-                    <div class="title"><h1>Norman</h1></div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <meta name="author" content="Team">
+    <meta name="description" content="Norman">
+    <meta name="keywords" content="pictures, photos, photography">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Norman</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/index.css" media="screen">
+    <script src="assets/script/index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container flexbox">
+                <div class="title">
+                    <h1>Norman</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu-bar">
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                         </ul>
                     </nav>
-                    
-                    <div class="menu-bar">
-                        <nav>
-                            <ul>
-                                <li class="toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <section>
-                <div class="hero-image">
-                    <div class="overlay"></div>
-                    <div class="hero-text">
-                        <h2>Norman Photography</h2>
-                        <p>We bring joy and creativity with every photo</p>
-                        <a href="#" id="portfolio">View Portfolio</a>
-                    </div>
+        <section>
+            <div class="hero-image">
+                <div class="overlay"></div>
+                <div class="hero-text">
+                    <h2>Norman Photography</h2>
+                    <p>We bring joy and creativity with every photo</p>
+                    <a href="#" id="portfolio">View Portfolio</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="services">
-                <div class="container section-heading">
-                    <h3>Our Services</h3>
-                </div>
-            </section>
+        <section id="services">
+            <div class="container section-heading">
+                <h3>Our Services</h3>
+            </div>
+        </section>
 
-            <section class="container flexbox">
-                <div class="row">
-                    <div class="column">
-                        <div class="image image1">
-                            <img src="./assets/img/portrait.jpg" alt="portrait">
-                        </div>
-                        <h3>Portrait</h3>
-                        <div class="button">
-                            <a href="#">See More</a>
-                        </div>
+        <section class="container flexbox">
+            <div class="row">
+                <div class="column">
+                    <div class="image image1">
+                        <img src="./assets/img/portrait.jpg" alt="portrait">
                     </div>
-                    <div class="column">
-                        <div class="image image2">
-                            <img src="./assets/img/wildlife.jpg" alt="wildlife">
-                        </div>
-                        <h3>Wildlife</h3>
-                        <div class="button">
-                            <a href="#">See More</a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="image image3">
-                            <img src="./assets/img/beach.jpg" alt="beach">
-                        </div>
-                        <h3>Landscape</h3>
-                        <div class="button">
-                            <a href="#">See More</a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="image image4">
-                            <img src="./assets/img/wedding.jpg" alt="beach">
-                        </div>
-                        <h3>wedding</h3>
-                        <div class="button">
-                            <a href="#">See More</a>
-                        </div>
+                    <h3>Portrait</h3>
+                    <div class="button">
+                        <a href="#">See More</a>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="column">
+                    <div class="image image2">
+                        <img src="./assets/img/wildlife.jpg" alt="wildlife">
+                    </div>
+                    <h3>Wildlife</h3>
+                    <div class="button">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image image3">
+                        <img src="./assets/img/beach.jpg" alt="beach">
+                    </div>
+                    <h3>Landscape</h3>
+                    <div class="button">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image image4">
+                        <img src="./assets/img/wedding.jpg" alt="beach">
+                    </div>
+                    <h3>wedding</h3>
+                    <div class="button">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-part -->
+        <footer>
+            <div class="footer">
+                <div class="contact-info">
+                    <p id="contact-me">Contact Info:</p>
+                    <div class="icon">
+                        <a href="https://github.com/GabeNicholauson/final-project"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/home?lang=en-ca"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <p id="copyright">© 2022 Norman photography</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
 </html>
