@@ -1,0 +1,93 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-light-bg: #f2f4f6;
+    --app-green-hover: #007100;
+    --app-light-green: #008000;
+    --app-light-bg: #f0f4f6;
+    --app-border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in-out;
+}
+
+body {
+    background-color: var(--app-light-bg);
+    height: 100vh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* -------------------------------- */
+/* Header                           */
+/* -------------------------------- */
+
+header {
+    width: 100%;
+    height: 56px;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    z-index: 333;
+}
+  
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 36px;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-bar nav ul li.toggle {
+    display: none;
+    text-align: right;
+}
+
+nav ul li + li {
+    margin-left: 30px;
+}
