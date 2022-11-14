@@ -263,22 +263,15 @@ footer {
 }
 
 div.footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     color: var(--app-light-bg);
     font-size: 20px;
     font-weight: 400;
 }
 
-div.contact-info {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact-me, .icon{
-    padding-bottom: 10px;
+.icon{
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,11 +279,14 @@ div.contact-info {
 
 #copyright {
     color: #a6a6a6;
-    font-size: 15px;
+    font-size: 15px;  
+    display: flex;
+    justify-content: end; 
+    align-self: center;
 }
 
 i.fa-brands, i.fa-envelope{
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10px;
 }
 
