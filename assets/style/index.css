@@ -3,8 +3,8 @@
 :root {
     --app-dark-bg:#1a1d28;
     --app-light-bg: #f2f4f6;
-    --app-green-hover: #007100;
-    --app-light-green: #008000;
+    --app-green-hover: #006d00;
+    --app-light-green: #007800;
     --app-light-bg: #f0f4f6;
     --app-border-radius: 5px;
 }
@@ -49,7 +49,7 @@ header {
 .title h1 {
     font-size: 18px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     line-height: 56px;
     text-transform: uppercase;
     letter-spacing: 0.3px;
@@ -72,7 +72,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 16px;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.2px;
@@ -90,4 +90,164 @@ nav ul li a:hover {
 
 nav ul li + li {
     margin-left: 30px;
+}
+
+/* -------------------------------- */
+/* Section-Hero Image               */
+/* -------------------------------- */
+  
+.hero-image {
+    background: #fff url("../img/banner\ \(6\).jpg") center center / cover no-repeat;
+    height: 100vh;
+    position: relative;
+}
+  
+.overlay {
+    min-height: 100vh;
+    background-color: rgb(20 24 28 / 0.7);
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    color: #fff;
+    margin: auto 10px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.hero-text h2 {
+    margin-top: 20px;
+    font-size: 66px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+  
+.hero-text p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+  
+.hero-text a {
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin-top: 40px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    background-color: var(--app-light-green);
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--app-border-radius);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    transition: background-color 0.25s ease-in-out;
+    
+}
+
+.hero-text a i {
+    font-size: 18px;
+}
+
+.hero-text a i {
+    font-size: 18px;
+}
+
+  
+.hero-text a:hover {
+    background-color: var(--app-green-hover);
+    color: #fff;
+}
+
+
+/* Section */
+section .section-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+  
+section .section-heading h3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #000;
+}
+
+/* -------------------------------- */
+/* Section-center                   */
+/* -------------------------------- */
+
+section div.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+    min-width:  calc(25% - 15px, 1080px);
+    overflow: hidden;
+}
+  
+.column {
+    width: 520px;
+    min-width: 140px;
+    height: 600px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 5px;
+    background-color: none;
+    border: none;
+    box-shadow: 1px 3px 3px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image {
+    width:100%;
+    height: 500px;
+    text-align: center;
+    border: none;
+}
+
+.column > h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.column:hover {
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 1px 1px 4px rgba(99, 98, 98, 0.2);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-inline: auto;
+}
+
+.column .button {
+    margin-inline: auto;
+}
+
+.column .button a {
+    text-decoration: none;
+    color: var(--app-light-green);
 }
