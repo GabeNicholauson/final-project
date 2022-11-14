@@ -101,6 +101,9 @@ nav ul li + li {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 0.3);
+}
+
+section {
     margin-bottom: 50px;
 }
 
@@ -113,10 +116,21 @@ nav ul li + li {
 }
 
 /* -------------------------------- */
-/* contact form                     */
+/* contact                          */
 /* -------------------------------- */
 
-.contact {
+.divide {
+    width: 3px;
+    height: 320px;
+    background-image: linear-gradient(#fff, #a7a7a7, #fff);
+}
+
+.info article {
+    width: 400px;
+    height: 100%;
+}
+
+.contact, .info {
     display: grid;
     place-items: center;
 }
