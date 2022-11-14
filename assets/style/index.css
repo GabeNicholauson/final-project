@@ -191,7 +191,7 @@ section div.row {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;
+    margin-inline: auto;
     text-align: center;
     min-width:  calc(25% - 15px, 1080px);
     overflow: hidden;
@@ -303,3 +303,126 @@ a {
 a:active {
     color: var(--app-dark-bg);
 }
+
+/* Media queries                    */
+/* -------------------------------- */
+
+/* 1200px and down */
+@media (max-width: 1200px) {
+
+    section .hero-text h2 {
+      font-size: 57px;
+    } 
+}
+
+@media (max-width: 960px) {
+        
+    section .hero-text h2 {
+        font-size: 44px;
+        font-weight: 600;
+    } 
+
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+/* 800px and down */
+@media (max-width: 800px) {
+
+    .hero-image {
+        height: 90vh;
+        position: relative;
+    }
+    
+    .overlay {
+        min-height: 90vh;
+        background-color: rgb(20 24 28 / 0.8);
+    }
+        
+    section .hero-text h2 {
+        font-size: 38px;
+        font-weight: 400;
+    } 
+
+    .hero-text p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    nav ul li, .contact {
+        display: none;
+    }
+
+    .menu-bar nav ul li.toggle {
+        display: block;
+        margin: 0 0 0 190px;
+        text-align: right;
+    }
+
+    .column {
+        width: 750px;
+        height: 600px;
+    }
+}
+
+/* 680px and down */
+@media (max-width: 680px) {
+
+    .hero-image {
+        height: 90vh;
+        position: relative;
+    }
+    
+    .overlay {
+        min-height: 90vh;
+        background-color: rgb(20 24 28 / 0.8);
+    }
+
+    section .hero-text h2 {
+        font-size: 28px;
+        font-weight: 400;
+    } 
+
+    .column {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+/* 500px and down */
+@media (max-width: 500px) {
+
+    .hero-image {
+        height: 80vh;
+        position: relative;
+    }
+    
+    .overlay {
+        min-height: 80vh;
+        background-color: rgb(20 24 28 / 0.8);
+    }
+        
+    section .hero-text h2  {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+        
+    .hero-text p {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+    }
+
+    .column {
+        width: 500px;
+        height: 550px;
+    }
+
+}
+
+
