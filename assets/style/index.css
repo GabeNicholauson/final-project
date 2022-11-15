@@ -148,30 +148,6 @@ nav ul li + li {
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
 }
-  
-
-.fa-chevron-right {
-    font-size: 35px;
-    position: absolute;
-    right: -46%;
-    top: 55%;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.fa-chevron-left {
-    font-size: 35px;
-    position: absolute;
-    top: 55%;
-    left: -50%;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.fa-chevron-left.is-visible, .fa-chevron-right.is-visible {
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /* Section */
@@ -259,7 +235,7 @@ img {
 }
 
 /* -------------------------------- */
-/* Section-services                 */
+/* Section-Profile                  */
 /* -------------------------------- */
 
 .column.profile-img, .column.bio {
@@ -346,7 +322,7 @@ a:active {
 }
 
 /* -------------------------------- */
-/* footer                           */
+/* Media Queries                    */
 /* -------------------------------- */
 
 /* 1200px and down */
@@ -368,18 +344,6 @@ a:active {
         font-size: 18px;
         font-weight: 400;
         text-align: center;
-    }
-
-    .fa-chevron-right {
-        font-size: 30px;
-        right: -46%;
-        top: 55%;
-    }
-    
-    .fa-chevron-left {
-        font-size: 30px;
-        top: 58%;
-        left: -50%;
     }
 }
 
@@ -447,20 +411,6 @@ a:active {
 
 /* 500px and down */
 @media (max-width: 500px) {
-
-    .fa-chevron-right {
-        font-size: 25px;
-        position: absolute;
-        right: -14%;
-        top: 48%;
-    }
-    
-    .fa-chevron-left {
-        font-size: 25px;
-        position: absolute;
-        top: 50%;
-        left: -15%;
-    }
 
     .hero-image {
         height: 80vh;
