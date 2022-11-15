@@ -103,8 +103,9 @@ nav ul li + li {
     background-image: url("../img/banner-2.jpg");
     height: 100vh;
     position: relative;
+    transition: all 0.5s ease;
 }
-  
+
 .overlay {
     min-height: 100vh;
     background-color: rgb(20 24 28 / 0.5);
@@ -154,6 +155,8 @@ nav ul li + li {
     position: absolute;
     right: -46%;
     top: 55%;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .fa-chevron-left {
@@ -161,16 +164,13 @@ nav ul li + li {
     position: absolute;
     top: 55%;
     left: -50%;
+    visibility: hidden;
+    opacity: 0;
 }
 
-.hero-text a i {
-    font-size: 18px;
-}
-
-  
-.hero-text a:hover {
-    background-color: var(--app-green-hover);
-    color: #fff;
+.fa-chevron-left.is-visible, .fa-chevron-right.is-visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 
