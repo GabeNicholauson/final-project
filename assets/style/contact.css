@@ -113,7 +113,7 @@ section {
     display: grid;
     place-items: center;
     color: #fff;
-    font-size: 70px;
+    font-size: 59px;
     font-weight: 500;
 }
 
@@ -203,7 +203,57 @@ article h3 {
     margin-bottom: 15px;
 }
 
+/* -------------------------------- */
+/* footer                           */
+/* -------------------------------- */
 
+footer {
+    background-color: var(--app-green-hover);
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--app-light-bg);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright {
+    color: #a6a6a6;
+    font-size: 15px;  
+    display: flex;
+    justify-content: end; 
+    align-self: center;
+}
+
+i.fa-brands, i.fa-envelope{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--app-light-bg);
+}
+
+
+a:active {
+    color: var(--app-dark-bg);
+}
+
+/* -------------------------------- */
+/* Media queries                    */
+/* -------------------------------- */
 @media (max-width: 880px) {
 
     nav ul li {
