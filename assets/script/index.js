@@ -50,26 +50,3 @@ onEvent('mousemove', heroBanner, function() {
     right.classList.add('is-visible');
     left.classList.add('is-visible');
 })
-
-
-onEvent('click', right, function() {
-    for (let i = 0; i < images.length; i++) {
-        let newImg = "url(" + images[i++] + ")";
-        heroBanner.style.backgroundImage = newImg;
-
-        if (i == 3) {
-            right.classList.remove('is-visible');
-        }
-    }
-})
-
-onEvent('click', left, function() {
-    for (let i = 0; images.length - 1 >= i; i--) {
-        let newImg = "url(" + images[images.length - 1] + ")";
-        heroBanner.style.backgroundImage = newImg;
-
-        if (i == 0) {
-            left.classList.remove('is-visible');
-        }
-    }
-})
