@@ -189,7 +189,7 @@ section .section-heading h3 {
 }
 
 /* -------------------------------- */
-/* Section-center                   */
+/* Section-services                 */
 /* -------------------------------- */
 
 section div.row {
@@ -206,7 +206,6 @@ section div.row {
   
 .column {
     width: 520px;
-    min-width: 140px;
     height: 600px;
     border-radius: 5px;
     text-align: left;
@@ -258,6 +257,45 @@ img {
     text-decoration: none;
     color: var(--app-light-green);
 }
+
+/* -------------------------------- */
+/* Section-services                 */
+/* -------------------------------- */
+
+.column.profile-img, .column.bio {
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 5px;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.column.profile:hover, .column.bio:hover {
+    box-shadow: none;
+}
+
+.bio h3 {
+    font-size: 20px;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 /* -------------------------------- */
 /* footer                           */
