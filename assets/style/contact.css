@@ -101,7 +101,7 @@ nav ul li + li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 0.3);
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 0.6);
 }
 
 section {
@@ -113,7 +113,8 @@ section {
     display: grid;
     place-items: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 70px;
+    font-weight: 500;
 }
 
 /* -------------------------------- */
@@ -129,21 +130,35 @@ section {
 .info article {
     width: 400px;
     height: 100%;
+    color: #141414;
 }
 
 .contact {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 10px;
 }
 
 .info {
     display: grid;
     place-items: center;
+    padding: 10px 5px;
+}
+
+article p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+article h3 {
+    margin-top: 20px;
 }
 
 .contact-form {
     flex-direction: column;
+    padding: 10px;
 }
 
 .names {
@@ -177,6 +192,7 @@ section {
 .send {
     background-color: var(--app-light-green);
     color: #fff;
+    border: none;
 }
 
 .send:hover {
@@ -189,11 +205,45 @@ section {
 
 
 @media (max-width: 880px) {
+
+    nav ul li {
+        display: none;
+    }
+
+    .menu-bar nav ul li.toggle {
+        display: block;
+        margin: 0 0 0 190px;
+        text-align: right;
+    }
+
     .divide {
         display: none;
     }
 
     .contact {
         justify-content: center;
+    }
+}
+
+/* 500px and down */
+@media (max-width: 500px) {
+
+    .names {
+        width: 380px;
+        justify-content: space-between;
+    }
+
+    .contact-form {
+        width: 400px;
+    } 
+
+    .info {
+       width: 400px;
+       height: 300px;
+    }
+
+    .info article p {
+        text-align: left;
+      text-justify: inter-word;
     }
 }
