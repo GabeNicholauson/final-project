@@ -112,6 +112,7 @@ section {
     height: 400px;
     display: grid;
     place-items: center;
+    text-align: center;
     color: #fff;
     font-size: 59px;
     font-weight: 500;
@@ -124,7 +125,7 @@ section {
 .divide {
     width: 3px;
     height: 320px;
-    background-image: linear-gradient(#fff, #a7a7a7, #fff);
+    background-image: linear-gradient(var(--app-light-bg), #a7a7a7, var(--app-light-bg));
 }
 
 .info article {
@@ -203,6 +204,10 @@ article h3 {
     margin-bottom: 15px;
 }
 
+form input, .message {
+    font-size: 18px;
+}
+
 /* -------------------------------- */
 /* footer                           */
 /* -------------------------------- */
@@ -278,22 +283,28 @@ a:active {
 /* 500px and down */
 @media (max-width: 500px) {
 
-    .names {
+    .names input {
         width: 380px;
-        justify-content: space-between;
     }
 
-    .contact-form {
+    .names input:first-child {
+        margin-bottom: 15px;
+    }
+
+    form div {
+        flex-wrap: wrap;
+    }
+
+    .contact-form, .info {
         width: 400px;
     } 
 
     .info {
-       width: 400px;
        height: 300px;
     }
 
     .info article p {
         text-align: left;
-      text-justify: inter-word;
+        text-justify: inter-word;
     }
 }

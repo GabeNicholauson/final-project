@@ -50,16 +50,18 @@ function validate() {
 
     if (count === 4) {
         formFields.innerHTML = 'Fields with * are required';
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-          });
+        cancelFormSubmit();
     } else if (!valid) {
         formFields.innerHTML = message;
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-          });
+        cancelFormSubmit();
     } else {
         alert('Form submitted');
         form.submit();
     }
+}
+
+function cancelFormSubmit() {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+      });
 }
