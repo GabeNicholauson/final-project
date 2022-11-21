@@ -6,6 +6,7 @@ const emailRegex = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+(
 sendForm.addEventListener('click', () => {
     validate();
 });
+
 /*************************
  * Functions
 *************************/
@@ -20,6 +21,10 @@ function validate() {
     let message = '';
     let valid = true;
     let count = 0;
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+      });
 
     if (firstName.length === 0) {
         message += 'First name is required<br>';
@@ -50,18 +55,10 @@ function validate() {
 
     if (count === 4) {
         formFields.innerHTML = 'Fields with * are required';
-        cancelFormSubmit();
     } else if (!valid) {
         formFields.innerHTML = message;
-        cancelFormSubmit();
     } else {
         alert('Form submitted');
         form.submit();
     }
-}
-
-function cancelFormSubmit() {
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-      });
 }

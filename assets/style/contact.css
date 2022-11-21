@@ -215,7 +215,8 @@ form input, .message {
 footer {
     background-color: var(--app-green-hover);
     width: 100%;
-    margin-top: 20px;
+    position: relative;
+    top: 43px;
 }
 
 div.footer {
@@ -259,7 +260,7 @@ a:active {
 /* -------------------------------- */
 /* Media queries                    */
 /* -------------------------------- */
-@media (max-width: 880px) {
+@media (max-width: 940px) {
 
     nav ul li {
         display: none;
